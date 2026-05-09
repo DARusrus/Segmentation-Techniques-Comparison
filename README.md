@@ -514,7 +514,7 @@ flowchart LR
 ```bibtex
 @misc{fourparadigms2026,
   title   = {Four Paradigms, One Scene: A Forensic Comparison of Segmentation Ontologies},
-  author  = {Ahmed},
+  author  = {Ahmed Amir Rusrus},
   year    = {2026},
   note    = {COCO 2017 · SegFormer · YOLOv8x-seg · Mask2Former · SAM 2 · 125 stratified images},
   url     = {https://github.com/YOUR_USERNAME/four-paradigms-one-scene}
