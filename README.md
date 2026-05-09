@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Four%20Paradigms,%20One%20Scene&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=A%20Forensic%20Comparison%20of%20Segmentation%20Ontologies&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4E79A7,33:F28E2B,66:59A14F,100:E15759&height=200&section=header&text=Four%20Paradigms,%20One%20Scene&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=A%20Forensic%20Comparison%20of%20Segmentation%20Ontologies&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -452,7 +452,7 @@ four-paradigms-one-scene/
 ### Local Installation
 
 ```bash
-git clone https://github.com/DARusrus/four-paradigms-one-scene
+git clone https://github.com/YOUR_USERNAME/four-paradigms-one-scene
 cd four-paradigms-one-scene
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
@@ -513,7 +513,7 @@ flowchart LR
   author  = {Ahmed},
   year    = {2026},
   note    = {COCO 2017 · SegFormer · YOLOv8x-seg · Mask2Former · SAM 2 · 125 stratified images},
-  url     = {https://github.com/DARusrus/four-paradigms-one-scene}
+  url     = {https://github.com/YOUR_USERNAME/four-paradigms-one-scene}
 }
 ```
 
@@ -534,7 +534,7 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=Four%20Paradigms%20%C2%B7%20One%20Scene&fontSize=18&fontColor=7C6AF7&fontAlignY=65&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4E79A7,33:F28E2B,66:59A14F,100:E15759&height=120&section=footer&text=Four%20Paradigms%20%C2%B7%20One%20Scene&fontSize=18&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%"/>
 
 <br/>
 
@@ -544,8 +544,8 @@ flowchart LR
 
 <br/>
 
-![Visitors](https://komarev.com/ghpvc/?username=DARusrus&label=Profile%20Views&color=7C6AF7&style=flat-square)
+![Visitors](https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=7C6AF7&style=flat-square)
 &nbsp;
-[![GitHub Stars](https://img.shields.io/github/stars/DARusrus/four-paradigms-one-scene?style=flat-square&color=7C6AF7)](https://github.com/DArusrus/four-paradigms-one-scene)
+[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/four-paradigms-one-scene?style=flat-square&color=7C6AF7)](https://github.com/YOUR_USERNAME/four-paradigms-one-scene)
 
 </div>
