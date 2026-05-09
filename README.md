@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=800&color=7C6AF7&center=true&vCenter=true&multiline=true&width=700&height=80&lines=Semantic+%C2%B7+Instance+%C2%B7+Panoptic+%C2%B7+Promptable;SegFormer+%C2%B7+YOLOv8x-seg+%C2%B7+Mask2Former+%C2%B7+SAM+2;125+COCO+Images+%C2%B7+4+Models+%C2%B7+6+Deep+Metrics)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=800&color=7AB8D9&center=true&vCenter=true&multiline=true&width=700&height=80&lines=Semantic+%C2%B7+Instance+%C2%B7+Panoptic+%C2%B7+Promptable;SegFormer+%C2%B7+YOLOv8x-seg+%C2%B7+Mask2Former+%C2%B7+SAM+2;125+COCO+Images+%C2%B7+4+Models+%C2%B7+6+Deep+Metrics)](https://git.io/typing-svg)
 
 <br/>
 
@@ -16,11 +16,11 @@
 
 <br/>
 
-![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)
-![COCO](https://img.shields.io/badge/Dataset-COCO%202017-6366f1?style=flat-square)
-![Models](https://img.shields.io/badge/Models-4%20Pretrained-a855f7?style=flat-square)
-![Images](https://img.shields.io/badge/Evaluated%20On-125%20Images-f59e0b?style=flat-square)
-![Strata](https://img.shields.io/badge/Scene%20Strata-5%20Types-ec4899?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-59A14F?style=flat-square)
+![COCO](https://img.shields.io/badge/Dataset-COCO%202017-4E79A7?style=flat-square)
+![Models](https://img.shields.io/badge/Models-4%20Pretrained-F28E2B?style=flat-square)
+![Images](https://img.shields.io/badge/Evaluated%20On-125%20Images-E15759?style=flat-square)
+![Strata](https://img.shields.io/badge/Scene%20Strata-5%20Types-59A14F?style=flat-square)
 
 </div>
 
@@ -57,35 +57,39 @@ This project is not another "run four models and show a table." It is a **forens
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    WHAT MAKES THIS DIFFERENT                    │
-├──────────────────────────┬──────────────────────────────────────┤
-│  🎯 Stratified Sampling  │  25 images × 5 scene archetypes      │
-│                          │  crowd · animal · indoor ·           │
-│                          │  vehicle · mixed — not random        │
-├──────────────────────────┼──────────────────────────────────────┤
-│  📐 Boundary Sharpness   │  Trimap-based edge F-measure         │
-│                          │  measures mask-to-edge alignment     │
-│                          │  at pixel level — not just IoU       │
-├──────────────────────────┼──────────────────────────────────────┤
-│  🧮 Paradigm Divergence  │  Pairwise pixel-level IoU agreement  │
-│                          │  between paradigms — quantifies      │
-│                          │  how differently they see the world  │
-├──────────────────────────┼──────────────────────────────────────┤
-│  🌐 Pareto Frontier      │  Speed vs quality with per-stratum   │
-│                          │  satellites — shows rankings SHIFT   │
-│                          │  by scene type                       │
-├──────────────────────────┼──────────────────────────────────────┤
-│  🗺️ Decision Matrix      │  Data-driven 6×4 suitability table   │
-│                          │  for real-world use cases, weighted  │
-│                          │  by actual measured metrics          │
-├──────────────────────────┼──────────────────────────────────────┤
-│  ⚡ Live Gradio App      │  3-tab interactive demo: upload any  │
-│                          │  image, explore failure gallery,     │
-│                          │  consult the decision atlas          │
-└──────────────────────────┴──────────────────────────────────────┘
-```
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center">✦ &nbsp; WHAT MAKES THIS DIFFERENT &nbsp; ✦</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="28%" align="center"><strong>🎯 Stratified Sampling</strong></td>
+      <td>25 images × 5 scene archetypes — <code>crowd · animal · indoor · vehicle · mixed</code><br/>Ensures every metric has diagnostic meaning, not just average behaviour</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>📐 Boundary Sharpness</strong></td>
+      <td>Trimap-based edge F-measure via Sobel magnitude — measures pixel-level mask-to-edge alignment<br/>Goes far beyond standard IoU to expose where each model truly snaps to real boundaries</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>🧮 Paradigm Divergence</strong></td>
+      <td>Pairwise pixel-level IoU agreement between all 4 paradigms rendered as a 4×4 heatmap<br/>Quantifies how fundamentally differently each model interprets the same scene</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>🌐 Pareto Frontier</strong></td>
+      <td>Speed vs composite quality with per-stratum satellite sub-points connected by spokes<br/>Reveals that paradigm rankings <em>shift</em> by scene — YOLO rises on vehicles, SAM collapses on crowds</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>🗺️ Decision Matrix</strong></td>
+      <td>Data-driven 6×4 suitability heatmap for real-world use cases scored 1–5 from actual measured metrics<br/>Autonomous driving · Medical imaging · Robotics · Surveillance · E-commerce · Content moderation</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>⚡ Live Gradio App</strong></td>
+      <td>3-tab interactive demo — upload any image for live 4-model inference, browse 20 pre-computed failure<br/>cases, or consult the full decision atlas. Public URL via <code>share=True</code>, zero infrastructure</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -95,14 +99,14 @@ This project is not another "run four models and show a table." It is a **forens
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {
-  'primaryColor': '#302b63',
+  'primaryColor': '#0d1f2d',
   'primaryTextColor': '#ffffff',
-  'primaryBorderColor': '#7C6AF7',
-  'lineColor': '#7C6AF7',
-  'secondaryColor': '#0f0c29',
-  'tertiaryColor': '#24243e',
-  'edgeLabelBackground': '#1a1a2e',
-  'clusterBkg': '#0f0c29'
+  'primaryBorderColor': '#4E79A7',
+  'lineColor': '#59A14F',
+  'secondaryColor': '#1a0d05',
+  'tertiaryColor': '#0a130a',
+  'edgeLabelBackground': '#0d1f2d',
+  'clusterBkg': '#0a0f14'
 }}}%%
 
 flowchart TB
@@ -188,20 +192,20 @@ flowchart TB
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {
-  'primaryColor': '#302b63',
+  'primaryColor': '#1f1005',
   'primaryTextColor': '#ffffff',
-  'primaryBorderColor': '#7C6AF7',
-  'lineColor': '#7C6AF7',
-  'secondaryColor': '#0f0c29',
-  'tertiaryColor': '#24243e',
-  'activationBkgColor': '#24243e',
-  'activationBorderColor': '#7C6AF7',
-  'labelBoxBkgColor': '#0f0c29',
-  'labelBoxBorderColor': '#7C6AF7',
+  'primaryBorderColor': '#F28E2B',
+  'lineColor': '#E15759',
+  'secondaryColor': '#0a0d0f',
+  'tertiaryColor': '#0a130a',
+  'activationBkgColor': '#1f1005',
+  'activationBorderColor': '#F28E2B',
+  'labelBoxBkgColor': '#0d1f2d',
+  'labelBoxBorderColor': '#4E79A7',
   'loopTextColor': '#ffffff',
-  'noteBkgColor': '#24243e',
+  'noteBkgColor': '#0a130a',
   'noteTextColor': '#ffffff',
-  'noteBorderColor': '#7C6AF7'
+  'noteBorderColor': '#59A14F'
 }}}%%
 
 sequenceDiagram
@@ -475,12 +479,12 @@ pip install transformers>=4.45.0 \
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {
-  'primaryColor': '#302b63',
+  'primaryColor': '#1a0d05',
   'primaryTextColor': '#ffffff',
-  'primaryBorderColor': '#7C6AF7',
-  'lineColor': '#7C6AF7',
-  'secondaryColor': '#0f0c29',
-  'tertiaryColor': '#24243e'
+  'primaryBorderColor': '#F28E2B',
+  'lineColor': '#4E79A7',
+  'secondaryColor': '#0d1f2d',
+  'tertiaryColor': '#0a130a'
 }}}%%
 
 flowchart LR
@@ -544,8 +548,8 @@ flowchart LR
 
 <br/>
 
-![Visitors](https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=7C6AF7&style=flat-square)
+![Visitors](https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=4E79A7&style=flat-square)
 &nbsp;
-[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/four-paradigms-one-scene?style=flat-square&color=7C6AF7)](https://github.com/YOUR_USERNAME/four-paradigms-one-scene)
+[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/four-paradigms-one-scene?style=flat-square&color=F28E2B)](https://github.com/YOUR_USERNAME/four-paradigms-one-scene)
 
 </div>
