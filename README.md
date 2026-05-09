@@ -513,7 +513,7 @@ flowchart LR
   author  = {Ahmed},
   year    = {2026},
   note    = {COCO 2017 · SegFormer · YOLOv8x-seg · Mask2Former · SAM 2 · 125 stratified images},
-  url     = {https://github.com/YOUR_USERNAME/four-paradigms-one-scene}
+  url     = {https://github.com/DARusrus/four-paradigms-one-scene}
 }
 ```
 
@@ -544,8 +544,8 @@ flowchart LR
 
 <br/>
 
-![Visitors](https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=7C6AF7&style=flat-square)
+![Visitors](https://komarev.com/ghpvc/?username=DARusrus&label=Profile%20Views&color=7C6AF7&style=flat-square)
 &nbsp;
-[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/four-paradigms-one-scene?style=flat-square&color=7C6AF7)](https://github.com/YOUR_USERNAME/four-paradigms-one-scene)
+[![GitHub Stars](https://img.shields.io/github/stars/DARusrus/four-paradigms-one-scene?style=flat-square&color=7C6AF7)](https://github.com/DArusrus/four-paradigms-one-scene)
 
 </div>
